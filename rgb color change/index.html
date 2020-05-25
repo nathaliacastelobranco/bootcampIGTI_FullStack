@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Range RGB</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>RGB Color Change</h3>
+      <div class="colorRanges">
+        <p>
+          <label>R: Red</label
+          ><input type="text" name="redNumber" id="redNumber" disabled />
+          <input
+            type="range"
+            name="redRange"
+            id="redRange"
+            value="0"
+            min="0"
+            max="255"
+          />
+        </p>
+        <p>
+          <label>G: Green</label
+          ><input type="text" name="greenNumber" id="greenNumber" disabled />
+          <input
+            type="range"
+            name="greenRange"
+            id="greenRange"
+            value="0"
+            min="0"
+            max="255"
+          />
+        </p>
+        <p>
+          <label>B: Blue</label
+          ><input type="text" name="blueNumber" id="blueNumber" disabled />
+          <input
+            type="range"
+            name="blueRange"
+            id="blueRange"
+            value="0"
+            min="0"
+            max="255"
+          />
+        </p>
+      </div>
+      <div class="colorBox">
+        <div class="colorOutput"></div>
+      </div>
+
+      <div style="clear: both;"></div>
+
+      <div class="copyColor">
+        <input type="text" name="copyColor" id="copyColor" disabled />
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
